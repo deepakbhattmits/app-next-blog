@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
 
-import PostContent from "../../compoents/posts/PostDetail/PostContent";
+import PostContent from "../../components/posts/PostDetail/PostContent";
 import { getPostData } from "../../utils/api-utils";
 import { fetchPost } from "../api/v1/post";
 import { fetchAllPosts } from "../api/v1/posts";

@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { Hydrate } from "react-query/hydration";
 import { ReactQueryDevtools } from "react-query/devtools";
 import "../styles/_globals.scss";
-import Layout from "../compoents/layout/Layout";
+import Layout from "../components/layout/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(() => new QueryClient());

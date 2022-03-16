@@ -1,6 +1,6 @@
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import AllPosts from "../../compoents/posts/AllPosts";
+import AllPosts from "../../components/posts/AllPosts";
 import { fetchAllPosts } from "../api/v1/posts";
 interface IProp {
   posts: any[];

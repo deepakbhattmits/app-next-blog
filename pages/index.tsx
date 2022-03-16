@@ -1,7 +1,7 @@
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import FeaturedPosts from "../compoents/HomePage/FeaturedPosts";
-import Hero from "../compoents/HomePage/Hero";
+import FeaturedPosts from "../components/HomePage/FeaturedPosts";
+import Hero from "../components/HomePage/Hero";
 import { fetchFeaturedPosts } from "./api/v1/posts";
 interface IProp {
   posts: any[];
