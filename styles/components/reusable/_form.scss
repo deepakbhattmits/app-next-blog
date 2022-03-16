@@ -1,0 +1,36 @@
+.form__wrapper {
+  display: grid;
+  &--group {
+    display: inherit;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &--invalid,
+  .invalid-feedback {
+    border-color: #e0b4b4;
+    color: #9f3a38;
+    text-align: right;
+  }
+  &--label {
+    color: var(--color-black);
+    &.is-invalid {
+      border-color: #e0b4b4;
+      color: #9f3a38;
+    }
+  }
+  &--control {
+    // border-radius: 3px;
+    // border-width: 1px;
+    // border: 1px solid #444;
+    // padding: 1rem 1.5rem;
+    transition: all 0.2s;
+    &.is-invalid {
+      background: #fff6f6;
+      border-color: #e0b4b4;
+      color: #9f3a38;
+    }
+  }
+  &--submit {
+  }
+}

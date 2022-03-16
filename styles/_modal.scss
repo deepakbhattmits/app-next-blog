@@ -1,0 +1,72 @@
+.ant-modal {
+  &-close {
+    position: absolute;
+    background: var(--color-gray-light-1);
+    color: var(--color-black);
+    box-shadow: 0 0.5em 0.5em rgb(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2.6rem;
+    right: -2.9rem;
+    @include respond(phone) {
+      top: -3.6rem;
+      right: 0;
+    }
+    color: #ff4262;
+    border: 0.2rem solid #ff4262;
+    transition: all 0.4s;
+    &:hover {
+      border-color: var(--color-primary-light);
+      color: var(--color-primary-light);
+    }
+  }
+  &-header {
+    background: var(--color-gray-light-1);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  &-title {
+    color: var(--color-black);
+  }
+  &-content {
+    background: var(--color-gray-light-1);
+    border-radius: 2rem;
+    position: relative;
+    .form__wrapper {
+      width: 100%;
+      min-width: 5rem;
+      &--group {
+        &:last-child {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          grid-gap: 1rem;
+        }
+      }
+    }
+    .form__control {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      grid-gap: 1rem;
+      &--group {
+        display: inherit;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  // &.modal {
+  //   &-default {
+  //     background: transparent;
+  //   }
+  //   &-loading,
+  //   &-error,
+  //   &-success {
+  //     background: #000;
+  //   }
+  // }
+}

@@ -1,0 +1,52 @@
+.header {
+  padding-bottom: var(--size-8);
+  /* border-bottom: 8px solid var(--color-primary-light); */
+  /* gradient can be an image */
+  background: linear-gradient(
+      to right,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    )
+    left bottom no-repeat;
+  background-size: 100% 8px;
+  /* if linear-gradient, we need to resize it */
+  margin: var(--size-4) 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header h1 {
+  font-size: var(--size-8);
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  line-height: initial;
+  text-align: center;
+}
+
+.header img {
+  object-fit: cover;
+  width: 200px;
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: var(--size-8) 0;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .header h1 {
+    font-size: var(--size-16);
+    text-align: left;
+  }
+}

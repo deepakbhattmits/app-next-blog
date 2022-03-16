@@ -1,0 +1,33 @@
+{
+  "status": "Request Completed",
+  "statusCode": 200,
+  "data": [
+    {
+      "id": 1,
+      "title": "Getting Started with NextJS",
+      "date": "2022-11-01",
+      "slug": "getting-started-with-nextjs",
+      "image": "next-js.png",
+      "excerpt": "NextJS is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR",
+      "isFeatured": true
+    },
+    {
+      "id": 2,
+      "title": "Mastering JavaScript",
+      "excerpt": "JavaScript is the most important programming language for web development. You probably don't know it well enough!",
+      "slug": "mastering-javascript",
+      "image": "javascript-thumb.png",
+      "isFeatured": false,
+      "date": "2022-12-02"
+    },
+    {
+      "id": 3,
+      "title": "Electron js",
+      "excerpt": "Electron is a free and open-source software framework developed and maintained by GitHub. It allows for the development of desktop GUI applications using web technologies: it combines the Chromium rendering engine and the Node.js runtime. It was originally built for Atom.",
+      "slug": "electron-js",
+      "image": "electron-logo.png",
+      "isFeatured": false,
+      "date": "2022-12-02"
+    }
+  ]
+}

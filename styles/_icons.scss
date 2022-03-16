@@ -1,0 +1,54 @@
+.icon {
+  &-logo {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.2s;
+    path {
+      fill: var(--color-primary-dark);
+    }
+    &:hover {
+      box-shadow: 0 0 0.5rem var(--color-primary-light);
+      border-radius: 50%;
+      path {
+        fill: var(--color-primary-light);
+      }
+    }
+  }
+  &-moon {
+    width: 100%;
+    height: 100%;
+    path {
+      fill: #ff4262;
+    }
+  }
+  &-sun {
+    width: 100%;
+    height: 100%;
+    path {
+      fill: #ff4262;
+    }
+  }
+  &-login,
+  &-logout {
+    width: 100%;
+    height: 100%;
+    path {
+      fill: #ff4262;
+    }
+  }
+  &-loading {
+    path {
+      fill: var(--color-primary-light);
+    }
+  }
+  &-warning {
+    path {
+      fill: var(--color-red);
+    }
+  }
+  &-success {
+    path {
+      fill: var(--color-primary-dark);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+@import './abstracts/index';
+@import './components/index';
+@import './icons';
+@import './navbar';
+@import './modal';
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  // this defines what is the 1rem is
+  font-size: 62.5%; // 1rem = 10px (for our comfort we have decided) / 16px (default browser font size) = 62.5%
+}
+body {
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: var(--color-gray-light-1);
+  color: var(--color-black);
+  transition: all 0.2s;
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+}
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}

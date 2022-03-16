@@ -1,0 +1,55 @@
+.nav__wrapper {
+  display: grid;
+  grid-template-columns: 3rem auto;
+  justify-content: space-between;
+  &--right-content {
+    display: flex;
+    grid-gap: 1rem;
+    .btn-theme {
+      padding: 0.5rem;
+      border: 0.2rem solid transparent;
+      box-shadow: 0 0.25em 0.25em rgb(0, 0, 0, 0.3);
+      text-decoration: none;
+      outline: 0 solid;
+      transition: all 0.4s ease-out;
+      &:hover {
+        border-color: var(--color-primary-light);
+        box-shadow: 0 0.5em 0.5em rgb(0, 0, 0, 0.4);
+        svg path {
+          fill: var(--color-primary-light);
+        }
+      }
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   inset: -4px; // border width
+      //   border-radius: 50%;
+      //   z-index: -1;
+      //   background: linear-gradient(
+      //     45deg,
+      //     #ff4262,
+      //     #ffd70e,
+      //     #ff38ac
+      //   ); //border color
+      //   &:hover {
+      //     background: transparent;
+      //   }
+      // }
+    }
+    .btn {
+      &-login,
+      &-logout {
+        padding: 0.5rem;
+        border: 0.2rem solid transparent;
+        box-shadow: 0 0.25em 0.25em rgb(0, 0, 0, 0.3);
+        &:hover {
+          border-color: var(--color-primary-light);
+          box-shadow: 0 0.5em 0.5em rgb(0, 0, 0, 0.4);
+          svg path {
+            fill: var(--color-primary-light);
+          }
+        }
+      }
+    }
+  }
+}
