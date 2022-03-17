@@ -19,7 +19,6 @@ const DarkModeToggle: FC = (): JSX.Element => {
     const initialColorValue = root.style.getPropertyValue(
       "--initial-color-mode"
     );
-    // console.log('init', initialColorValue);
 
     setDarkTheme(initialColorValue === "dark");
   }, []);

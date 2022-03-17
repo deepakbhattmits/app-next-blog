@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "deploy": "cd out && now --public"
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",

@@ -22,7 +22,6 @@ const ContactForm: FC = (): JSX.Element => {
     setInputs((inputs: any) => ({ ...inputs, [name]: value }));
   };
   useEffect(() => {
-    console.log("inputs : ", inputs);
     let timer: any;
     if (contactMutation?.isSuccess || contactMutation?.isError) {
       timer = setTimeout(() => {
