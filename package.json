@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "export": "next export"
+    "deploy": "cd out && now --public"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",
