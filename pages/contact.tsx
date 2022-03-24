@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import ContactForm from '../components/contact/ContactForm'
-import { NextPage } from 'next'
+import { NextPage } from "next";
+import Head from "next/head";
+import ContactForm from "../components/contact/ContactForm";
 
 const ContactPage: NextPage = () => (
   <>
@@ -10,6 +10,6 @@ const ContactPage: NextPage = () => (
     </Head>
     <ContactForm />
   </>
-)
+);
 
-export default ContactPage
+export default ContactPage;
