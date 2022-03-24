@@ -14,3 +14,7 @@ It is designed from the ground up to support Next.js and Serverless.
 # Getting Started
 
 [Check out the example code](https://next-auth.js.org/getting-started/example) to see how easy it is to use NextAuth.js for authentication.
+
+# Nextauth js architecture
+
+![Nextauth](next-auth-architecture.png)
