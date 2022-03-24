@@ -3,7 +3,15 @@ import Head from "next/head";
 import AllPosts from "../../components/posts/AllPosts";
 import { fetchAllPosts } from "../api/v1/posts";
 interface IProp {
-  posts: any[];
+  posts: {
+    id: number;
+    title: string;
+    excerpt: string;
+    slug: string;
+    image: string;
+    isFeatured: boolean;
+    date: string;
+  }[];
 }
 const AllPostsPage: NextPage<IProp> = ({ posts }) => (
   <>
