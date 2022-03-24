@@ -4,7 +4,15 @@ import FeaturedPosts from "../components/HomePage/FeaturedPosts";
 import Hero from "../components/HomePage/Hero";
 import { fetchFeaturedPosts } from "./api/v1/posts";
 interface IProp {
-  posts: any[];
+  posts: {
+    id: number;
+    title: string;
+    excerpt: string;
+    slug: string;
+    image: string;
+    isFeatured: boolean;
+    date: string;
+  }[];
 }
 const Home: NextPage<IProp> = ({ posts }) => {
   return (
