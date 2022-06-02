@@ -23,7 +23,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const client = await connectToDatabase();
     const db = client.db();
     try {
-      await db.collection("conacts").insertOne({
+      await db.collection("contacts").insertOne({
         email,
         name,
         message,
